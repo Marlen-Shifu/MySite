@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
+</head>
+<body>
+	<header>
+
+		<div class="header-content">
+			<div class="logo">
+				MySite
+			</div>
+
+			<div class="nav">
+				<nav>
+					<a class="site" href="http://127.0.0.1:8000/">
+						About Site
+					</a>
+					<a class="me" href="http://127.0.0.1:8000/about-me">
+						About me
+					</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="main-content">
+			<div class="title">
+				<h1>{{ article_title }}</h1>
+			</div>
+
+			<div class="content">
+				<p>{{ text }}</p>
+			</div>
+
+			<address class="author">{{ author }}</address>
+		</div>
+	</main>
+
+	<footer>
+		<p class="number">+700 686 2081</p>
+	</footer>
+</body>

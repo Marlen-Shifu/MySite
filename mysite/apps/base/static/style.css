@@ -1,0 +1,55 @@
+body{
+	margin: 0px;
+
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header{
+	background: black;
+	width: 100%;
+	max-width: 1040px;
+	height: 100px;
+	position: relative;
+}
+
+.header-content{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+
+}
+
+.nav{
+
+}
+
+
+
+/* \HEADER */
+/* \HEADER */
+/* \HEADER */
+
+main{
+	width: 100%;
+	max-width: 1040px;
+	height: 568px;
+	background-image: url(https://i.ytimg.com/vi/9A4m0xzGOqM/maxresdefault.jpg);
+	position: absolute;
+}
+
+footer{
+	background: #3c81ed;
+	width: 100%;
+	max-width: 1040px;
+	height: 100px;
+	position: absolute;
+}
