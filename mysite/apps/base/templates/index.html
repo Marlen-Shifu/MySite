@@ -8,42 +8,36 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
 </head>
 <body>
-	<header>
+	
+	{% if Article_list %}
+		{% for i in Article_list %}
+			<h1>
+				{{ i.article_title }}
+			</h1>
 
-		<div class="header-content">
-			<div class="logo">
-				MySite
-			</div>
+			<p>
+				{{ i.text }}
+			</p>
 
-			<div class="nav">
-				<nav>
-					<a class="site" href="http://127.0.0.1:8000/">
-						About Site
-					</a>
-					<a class="me" href="http://127.0.0.1:8000/about-me">
-						About me
-					</a>
-				</nav>
-			</div>
-		</div>
-	</header>
+			<address>
+				{{ i.author }}
+			</address>
+		{% endfor %}
+	{% endif %}
 
-	<main>
+	{% if Article %}
+		{% for i in Article %}
+			<h1>
+				{{ i.article_title }}
+			</h1>
 
-		<div class="main-content">
-			<div class="title">
-				<h1>{{ article_title }}</h1>
-			</div>
+			<p>
+				{{ i.text }}
+			</p>
 
-			<div class="content">
-				<p>{{ text }}</p>
-			</div>
-
-			<address class="author">{{ author }}</address>
-		</div>
-	</main>
-
-	<footer>
-		<p class="number">+700 686 2081</p>
-	</footer>
+			<address>
+				{{ i.author }}
+			</address>
+		{% endfor %}
+	{% endif %}
 </body>
